@@ -123,7 +123,7 @@ target_compile_features("${EXE_NAME}" PRIVATE ${GK_NEEDED_FEATURES})
 #
 INCLUDE(CMakeDetermineSystem)
 set(Boost_USE_MULTITHREADED TRUE)
-# set(Boost_USE_STATIC_LIBS FALSE CACHE BOOL "Whether to use static libraries with regard to Boost C++ or not")
+set(Boost_USE_STATIC_LIBS ON CACHE BOOL "Whether to use static libraries with regard to Boost C++ or not")
 # set(Boost_USE_STATIC_RUNTIME FALSE)
 find_package(Boost 1.54.0 REQUIRED COMPONENTS "filesystem"
                                               "system")
