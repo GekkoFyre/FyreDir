@@ -3,6 +3,7 @@ A tool primarily intended for mass file/dir renaming, having originally been a p
 
 ## INSTALL ##
 **Microsoft Windows w/ Microsoft Visual Studio '17 CE**
+
 First, you will need to compile the [Boost C++](http://www.boost.org/) libraries. The settings you will need to use include compiling it with a ***versioned*** layout, ***static*** linking, ***shared*** runtime-linking, and with ***mutli-threading*** enabled. It does not matter what address modeling you decide to use, as long as it is consistent throughout the compilation process in everything you do.
 Next, you will have to create the solution files with [CMake](https://cmake.org/) using the commandline. In an external directory to the source-files, use either of these commands:
 
